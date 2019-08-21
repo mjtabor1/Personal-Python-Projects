@@ -38,10 +38,17 @@ def fizzbuzz():
         elif i % 5 == 0:
             numbers[i] = 'buzz'
     return numbers
+
+
+def pyramid(height):
+    for i in range(1, height+1, 2):
+        print(' ' * height + i * 'x')
+        height -= 1
   
 
 
 
 
 if __name__ == '__main__':
+    pyramid(3)
     
